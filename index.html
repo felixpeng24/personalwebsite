@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="container1">
+        <div id="container2">
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
@@ -34,21 +36,28 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="scroll-indicator">
+            <p>scroll down</p>
+            <span class="arrow">↓</span>
+        </div>
         <div class="hero-plank">
             <div class="hero-content">
-                <p class="hero-intro">Hi. I'm</p>
+                <p class="hero-intro">Hi I'm</p>
                 <h1 class="hero-name">Felix Peng</h1>
-                <div class="hero-image">
-                    <img src="images/textures/thumbtackRed.png" alt="" class="hero-thumbtack">
-                    <img src="images/felix/hero.png" alt="Felix Peng">
-                </div>
+                <a href="about.html" class="hero-image-link">
+                    <div class="hero-image">
+                        <img src="images/textures/thumbtackRed.png" alt="" class="hero-thumbtack">
+                        <img src="images/felix/hero.png" alt="Felix Peng">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section class="projects-section">
-        <h2 class="section-title">my work</h2>
+        <h2 class="section-title">My Work</h2>
+        <p class="section-subtitle">(click on the polaroids. or don't.)</p>
         <div class="polaroid-grid">
             <!-- Project 1: LADWP -->
             <a href="projects/ladwp.html" class="polaroid" style="--rotation: -2deg">
@@ -182,6 +191,15 @@
         </div>
     </section>
 
+        </div>
+    </div>
+
     <script src="script.js"></script>
+    <script>
+        // Hide scrollbar
+        var parent = document.getElementById('container1');
+        var child = document.getElementById('container2');
+        child.style.right = child.clientWidth - child.offsetWidth + "px";
+    </script>
 </body>
 </html>

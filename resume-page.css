@@ -1,0 +1,231 @@
+/* ===========================
+   Resume Page Specific Styles
+   =========================== */
+
+/* Resume Header */
+.resume-header {
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease-in;
+}
+
+.back-link {
+    display: inline-block;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #2c2c2c;
+    text-decoration: none;
+    padding: 0.6rem 2rem 0.6rem 0.5rem;
+    background: url('images/textures/navbar.png') center center;
+    background-size: cover;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.back-link:hover {
+    opacity: 0.7;
+}
+
+.resume-title {
+    font-family: 'Neon', sans-serif;
+    font-size: 5rem;
+    color: #ffffff;
+    text-shadow:
+        3px 3px 0px #FF6B6B,
+        6px 6px 0px #FF8E53,
+        9px 9px 20px rgba(0, 0, 0, 0.6);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.download-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.download-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Resume Content */
+.resume-content {
+    padding: 2rem;
+    animation: fadeIn 1s ease-in 0.2s both;
+}
+
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Resume Viewer */
+.resume-viewer {
+    width: 100%;
+    min-height: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.resume-viewer embed {
+    display: block;
+    border: none;
+}
+
+.fallback-message {
+    display: none;
+    text-align: center;
+    padding: 3rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.fallback-message p {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.fallback-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fallback-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* ===========================
+   Animations
+   =========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .resume-title {
+        font-size: 4rem;
+    }
+
+    .content-container {
+        padding: 1.5rem;
+    }
+
+    .resume-viewer {
+        min-height: 800px;
+    }
+
+    .resume-viewer embed {
+        height: 800px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .resume-header {
+        padding: 2rem 1rem;
+    }
+
+    .resume-title {
+        font-size: 3rem;
+        text-shadow:
+            2px 2px 0px #FF6B6B,
+            4px 4px 0px #FF8E53,
+            6px 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .download-button {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .content-container {
+        padding: 1rem;
+    }
+
+    .resume-viewer {
+        min-height: 600px;
+    }
+
+    .resume-viewer embed {
+        height: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-title {
+        font-size: 2.5rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .download-button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .resume-viewer {
+        min-height: 500px;
+    }
+
+    .resume-viewer embed {
+        height: 500px;
+    }
+}

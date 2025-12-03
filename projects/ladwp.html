@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="project-page.css">
 </head>
 <body>
+    <div id="container1">
+        <div id="container2">
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
@@ -175,6 +177,15 @@
         </div>
     </main>
 
+        </div>
+    </div>
+
     <script src="../script.js"></script>
+    <script>
+        // Hide scrollbar
+        var parent = document.getElementById('container1');
+        var child = document.getElementById('container2');
+        child.style.right = child.clientWidth - child.offsetWidth + "px";
+    </script>
 </body>
 </html>
