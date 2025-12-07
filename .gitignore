@@ -80,3 +80,8 @@ Thumbs.db
 
 # Content working files (not for public repo)
 CONTENT.md
+reference/
+
+# Large video files
+*.MOV
+*.mov

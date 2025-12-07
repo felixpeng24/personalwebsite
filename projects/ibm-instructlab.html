@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IBM InstructLab - Felix Peng's UX design work creating a collaborative data review interface for enterprise AI">
+    <title>IBM InstructLab | Felix Peng</title>
+    <link rel="icon" type="image/png" href="../images/textures/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body>
+    <div id="container1">
+        <div id="container2">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="../index.html" class="nav-tab">Home</a>
+                <a href="../about.html" class="nav-tab">About</a>
+                <a href="../resume.html" class="nav-tab">Resume</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/felixpeng24/" target="_blank" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/felixpeng24" target="_blank" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="header-content">
+            <a href="../index.html" class="back-link">← Back to Home</a>
+            <h1 class="project-title">IBM InstructLab</h1>
+            <p class="project-subtitle">Collaborative Data Review Interface for Enterprise AI</p>
+            <div class="project-meta">
+                <span class="meta-item">
+                    <strong>Timeline:</strong> 2 Months
+                </span>
+                <span class="meta-item">
+                    <strong>Role:</strong> UX Designer
+                </span>
+                <span class="meta-item">
+                    <strong>Team:</strong> 6 Designers
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <main class="project-content">
+        <div class="content-container">
+            <!-- Hero Image -->
+            <div class="project-hero-image">
+                <img src="../images/projects/ibm.png" alt="IBM InstructLab">
+            </div>
+
+            <!-- Overview Section -->
+            <section class="content-section">
+                <h2>Overview</h2>
+                <p>
+                    Designed a collaborative data review interface for IBM's InstructLab, an open-source project training enterprise-level LLMs with synthetically generated data on WatsonX AI. Led UX research and prototyping to solve the critical problem: "How might we allow teams of reviewers to efficiently and collaboratively approve or deny sets of synthetic data?"
+                </p>
+                <p>
+                    Built Figma prototype featuring dual-view design (list + modular), collaborative commenting, and integrated reference documents. Conducted user testing with IBM developers and presented to senior stakeholders from UX, product management, and development teams, receiving validation as "a big step forward from what we've been doing in the past — a large improvement."
+                </p>
+            </section>
+
+            <!-- The Problem Section -->
+            <section class="content-section">
+                <h2>The Problem</h2>
+                <p>
+                    InstructLab trains enterprise LLMs with synthetically generated data, but the current integration lacked a consistent way to review hundreds of datasets. Teams relied on irregular manual review processes—transferring data into CSV/JSON files or using command-line interfaces that created barriers for non-technical reviewers.
+                </p>
+                <p>
+                    This inconsistency caused setbacks in model training time and quality gaps. IBM developers reported: <em>"If I'm unsure about the process or answer, I just hope that someone gets around to reviewing the question."</em>
+                </p>
+            </section>
+
+            <!-- Pain Points Section -->
+            <section class="content-section">
+                <h2>Key Pain Points</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h3>No Standard Review Process</h3>
+                        <p>No existing standard review location or process, making review and collaboration especially difficult across teams.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Decision Uncertainty</h3>
+                        <p>Users were oftentimes unsure about their decisions, leaving some questions partially or completely unreviewed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Lack of Collaboration Tools</h3>
+                        <p>Despite the process being inherently collaborative and involving multiple reviewers, users were left on their own to assign or review questions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Design Solution Section -->
+            <section class="content-section">
+                <h2>Design Solution</h2>
+                <p>
+                    Working with continuous feedback from two WatsonX UX designers and one InstructLab developer, we designed screens encompassing three prioritized features: Collaborative Team Tools, List and Modular Views, and Approve/Deny/Edit functionalities.
+                </p>
+            </section>
+
+            <!-- Key Features Section -->
+            <section class="content-section">
+                <h2>Key Features</h2>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h3>List and Modular Views</h3>
+                        <p>List view offers faster, streamlined review with basic approve/deny functions for quick workflows. Modular view provides comprehensive review with editing capabilities, collaborative commenting, and side-by-side reference document access.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Collaborative Team Tooling</h3>
+                        <p>Enables reviewers to discuss synthetic data with commenting and tagging features. Users can tag teammates for help or additional perspectives, with comments appearing in the tagged reviewer's "to review" feed.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Reference Document Integration</h3>
+                        <p>Reviewers have direct access to source documents with PDF search tools, allowing accurate fact-checking of Q&A pairs against ground truth data in real-time.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Approve, Deny, and Edit Functionalities</h3>
+                        <p>Core review actions: approve accurate questions, deny unsatisfactory ones, or edit questions to align with intended results before final approval.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Research Process Section -->
+            <section class="content-section">
+                <h2>User Research & Testing</h2>
+                <p>
+                    Conducted user testing sessions with IBM software developers who work with the existing synthetic data generation process. Breaking into small groups (one developer + three designers), we gathered insights on current workflows, prototype usability, and desired features.
+                </p>
+                <p><strong>Critical takeaways:</strong></p>
+                <ul style="font-family: 'Overpass', sans-serif; font-size: 1.1rem; line-height: 1.8; color: #444; margin-left: 2rem;">
+                    <li>Data review was a very individualized process</li>
+                    <li>Reviewers leaned heavily on the reference document</li>
+                    <li>Modular view was preferred to list view and more functional</li>
+                </ul>
+            </section>
+
+            <!-- Iterations Section -->
+            <section class="content-section">
+                <h2>Design Iterations</h2>
+                <p>
+                    Based on user testing feedback, we focused on three key improvements: making navigation more intuitive, improving commenting, and increasing accessibility of reference documents.
+                </p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <h3>Navigation Improvements</h3>
+                        <p>Redesigned toggle between list and modular views with switch icon and colorful animated transitions to clearly indicate page changes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Simplified Commenting</h3>
+                        <p>Added minimally invasive comment display and redesigned comment modal to emphasize short interactions, aligned with developers' preference for simple commenting and independent decision-making.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Enhanced Reference Access</h3>
+                        <p>Included reference document for each question in modular view with PDF search tool, and made reference documents available in list view after users showed heavy reliance on source materials.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Impact Section -->
+            <section class="content-section testimonial-section">
+                <h2>Impact & Recognition</h2>
+                <blockquote class="testimonial">
+                    <p>"This is a big step forward from what we've been doing in the past — a large improvement!"</p>
+                    <cite>— Jacob Engelbrecht, Backend IBM Software Engineer</cite>
+                </blockquote>
+                <p style="font-family: 'Overpass', sans-serif; font-size: 1.1rem; line-height: 1.8; color: #444; margin-top: 1.5rem;">
+                    Presented final prototype to senior IBM stakeholders from UX, product management, and development teams. Received validation on design approach and strategic alignment with WatsonX AI objectives. Stakeholders highlighted potential for extending design to automated validation mechanisms and suggested additional metrics for data quality evaluation.
+                </p>
+            </section>
+
+            <!-- Tags Section -->
+            <section class="content-section">
+                <h2>Tags</h2>
+                <div class="project-tags">
+                    <span class="tag">UX Design</span>
+                    <span class="tag">User Research</span>
+                    <span class="tag">Enterprise AI</span>
+                    <span class="tag">IBM WatsonX</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Collaborative Tools</span>
+                </div>
+            </section>
+
+            <!-- Documents Section -->
+            <section class="content-section">
+                <h2>Project Documents</h2>
+
+                <div class="document-embed">
+                    <h3>Case Study</h3>
+                    <iframe src="../documents/IBM/Graphite Digital x IBM Instructlab Case Study.pdf" title="IBM InstructLab Case Study"></iframe>
+                </div>
+
+                <div class="document-embed">
+                    <h3>Stakeholder Presentation</h3>
+                    <iframe src="../documents/IBM/Instructlab x Graphite Stakeholder Presentation.pdf" title="IBM InstructLab Stakeholder Presentation"></iframe>
+                </div>
+            </section>
+        </div>
+    </main>
+
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Hide scrollbar
+        var parent = document.getElementById('container1');
+        var child = document.getElementById('container2');
+        child.style.right = child.clientWidth - child.offsetWidth + "px";
+    </script>
+</body>
+</html>
