@@ -510,6 +510,15 @@ body {
         padding: 0.6rem 1.5rem;
     }
 
+    .nav-social {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-social svg {
+        width: 20px;
+        height: 20px;
+    }
+
     .hero {
         min-height: 80vh;
         padding: 1rem;
@@ -610,17 +619,13 @@ body {
     }
 
     .nav-social {
-        gap: 1rem;
-    }
-
-    .nav-social a {
-        width: 40px;
-        height: 40px;
+        padding: 0.4rem 0.8rem;
+        gap: 0.7rem;
     }
 
     .nav-social svg {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 
     .thumbtack {
