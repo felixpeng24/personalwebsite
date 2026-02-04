@@ -6,6 +6,7 @@
     src: url('fonts/Neon.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
     src: url('fonts/overpass font/overpass-light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     src: url('fonts/overpass font/overpass-regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -27,6 +30,7 @@
     src: url('fonts/overpass font/overpass-bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
 /* ===========================
@@ -59,7 +63,7 @@ body {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background: url('images/textures/background.png') no-repeat center center fixed;
+    background: url('images/textures/background.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -68,8 +72,14 @@ body {
     top: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px; /* exact value is given through JavaScript */
+    right: 0px;
     overflow: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+#container2::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
 }
 
 /* Grainy texture overlay */
@@ -97,7 +107,7 @@ body {
         );
     opacity: 0.4;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 50;
 }
 
 /* ===========================
@@ -109,7 +119,7 @@ body {
     width: 100%;
     background: transparent;
     padding: 1.5rem 2rem;
-    z-index: 100000;
+    z-index: 100;
 }
 
 .nav-container {
@@ -132,7 +142,7 @@ body {
     color: #2c2c2c;
     text-decoration: none;
     padding: 0.7rem 2.5rem;
-    background: url('images/textures/navbar.png') center center;
+    background: url('images/textures/navbar.webp') center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     transition: opacity 0.3s ease;
@@ -152,7 +162,7 @@ body {
 .nav-social {
     display: flex;
     gap: 1rem;
-    background: url('images/textures/navbar.png') center center;
+    background: url('images/textures/navbar.webp') center center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 0.7rem 1.5rem;
@@ -217,7 +227,7 @@ body {
 }
 
 .hero-plank {
-    background: url('images/textures/plank1.png') center center;
+    background: url('images/textures/plank1.webp') center center;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 5rem 3rem;
@@ -303,14 +313,12 @@ body {
 }
 
 .section-title {
-    font-family: 'Neon', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
     font-size: 3.5rem;
     color: #ffffff;
     text-align: center;
-    text-shadow:
-        2px 2px 0px #FF6B6B,
-        4px 4px 0px #FF8E53,
-        6px 6px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
     margin-bottom: 1rem;
 }
 

@@ -1,6 +1,22 @@
 // Minimal JavaScript for Felix Peng's Portfolio
 
 // ===========================
+// Scrollbar Hiding Fallback
+// ===========================
+// CSS handles this now, but this is a fallback for older browsers
+(function() {
+    const container2 = document.getElementById('container2');
+    if (container2) {
+        // Only apply JS fix if CSS scrollbar hiding isn't working
+        const hasScrollbarCSS = CSS.supports('scrollbar-width', 'none') ||
+                                 'webkitOverflowScrolling' in document.documentElement.style;
+        if (!hasScrollbarCSS) {
+            container2.style.right = (container2.clientWidth - container2.offsetWidth) + 'px';
+        }
+    }
+})();
+
+// ===========================
 // Lazy Loading Images
 // ===========================
 document.addEventListener('DOMContentLoaded', () => {

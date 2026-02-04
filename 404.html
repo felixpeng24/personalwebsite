@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Felix Peng's Portfolio">
+    <title>404 | Felix Peng</title>
+    <link rel="icon" type="image/png" href="images/textures/favicon.webp">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .error-plank {
+            background: url('images/textures/plank1.webp') center center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 4rem 3rem;
+            max-width: 450px;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-code {
+            font-family: 'Neon', sans-serif;
+            font-size: 5rem;
+            color: #ffffff;
+            text-shadow:
+                3px 3px 0px #FF6B6B,
+                6px 6px 0px #FF8E53,
+                9px 9px 20px rgba(0, 0, 0, 0.6);
+            margin-bottom: 0.5rem;
+            letter-spacing: 4px;
+        }
+
+        .error-message {
+            font-family: 'Neon', sans-serif;
+            font-size: 1.6rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1.5rem;
+        }
+
+        .error-description {
+            font-family: 'Overpass', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            max-width: 320px;
+        }
+
+        .home-link {
+            display: inline-block;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2c2c2c;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            background: url('images/textures/navbar.webp') center center;
+            background-size: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .home-link:hover {
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            .error-plank {
+                padding: 3rem 2rem;
+                max-width: 350px;
+                min-height: 400px;
+            }
+
+            .error-code {
+                font-size: 4rem;
+            }
+
+            .error-message {
+                font-size: 1.3rem;
+            }
+
+            .error-description {
+                font-size: 0.9rem;
+                max-width: 260px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-plank {
+                padding: 2.5rem 1.5rem;
+                max-width: 300px;
+                min-height: 350px;
+            }
+
+            .error-code {
+                font-size: 3rem;
+            }
+
+            .error-message {
+                font-size: 1.1rem;
+            }
+
+            .error-description {
+                font-size: 0.85rem;
+                max-width: 220px;
+            }
+
+            .home-link {
+                font-size: 1rem;
+                padding: 0.6rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div id="container2">
+    <main class="error-page">
+        <div class="error-plank">
+            <h1 class="error-code">404</h1>
+            <p class="error-message">Page Not Found</p>
+            <p class="error-description">Looks like this wave washed away. The page you're looking for doesn't exist or has been moved.</p>
+            <a href="index.html" class="home-link">Back to Shore</a>
+        </div>
+    </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
