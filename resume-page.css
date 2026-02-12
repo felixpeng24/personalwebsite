@@ -53,11 +53,12 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    color: #ffffff;
+    color: #2c2c2c;
     text-decoration: none;
     padding: 0.8rem 2rem;
-    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
-    border-radius: 30px;
+    background: url('images/textures/navbar.webp') center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
@@ -136,11 +137,12 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: 1rem;
-    color: #ffffff;
+    color: #2c2c2c;
     text-decoration: none;
     padding: 0.8rem 2rem;
-    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
-    border-radius: 30px;
+    background: url('images/textures/navbar.webp') center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }

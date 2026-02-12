@@ -67,7 +67,6 @@
     background: rgba(0, 0, 0, 0.3);
     padding: 0.5rem 1.2rem;
     border-radius: 20px;
-    backdrop-filter: blur(5px);
 }
 
 .meta-item strong {
@@ -137,7 +136,7 @@
 }
 
 .impact-card {
-    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
+    background: #8B6544;
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
@@ -260,7 +259,7 @@
 
 /* Testimonial */
 .testimonial-section {
-    background: linear-gradient(135deg, #FFE5B4 0%, #FFDAB9 100%);
+    background: #F5E6D3;
     padding: 2rem;
     border-radius: 10px;
     margin-top: 2rem;
@@ -300,7 +299,7 @@
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
     font-size: 0.9rem;
-    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
+    background: #2c2c2c;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -324,7 +323,7 @@
     color: inherit;
     display: block;
     position: relative;
-    animation: fadeIn 0.8s ease-in both;
+    animation: polaroidFadeIn 0.8s ease-in both;
 }
 
 .gallery-polaroid:nth-child(1) { transform: rotate(-2deg); }
@@ -346,7 +345,6 @@
     overflow: hidden;
     background: #f0f0f0;
     margin-bottom: 0.8rem;
-    border: 1px solid #d0d0d0;
 }
 
 .gallery-polaroid-image img {
